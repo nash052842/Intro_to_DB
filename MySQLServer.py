@@ -1,3 +1,5 @@
+import mysql.connector
+from mysql.connector import Error
 
 def create_database():
     try:
@@ -9,7 +11,7 @@ def create_database():
 
         if connection.is_connected():
             cursor = connection.cursor()
-            cursor=("CREATE DATABASE: alx_book_store")
+            cursor=("CREATE DATABASE IF NOT EXISTS alx_book_store")
             print("Database 'alx_book_store' created successfully!")
 
     except Error as e:

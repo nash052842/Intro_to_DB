@@ -1,9 +1,8 @@
 SELECT 
     BOOK_NAME,
     BOOK_AUTHOR, 
-    BOOK_TYPE, 
-    BOOK_PRICE,
-    BOOK_AVAILLABLE, 
+    BOOK_orders, 
+    BOOK_customers,
 FROM 
     INFORMATION_BOOK_STORE_SCHEMA
 WHERE 

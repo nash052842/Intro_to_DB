@@ -16,6 +16,9 @@ def create_database():
 
     except Error as e:
         print(f"Error while connecting to MySQL: {e}")
+         except Error as e:
+        print(f"Error: {e}")
+
 
     finally:
         if 'cursor' in locals():

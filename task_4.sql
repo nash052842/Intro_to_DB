@@ -1,8 +1,13 @@
 SELECT 
-    BOOK_NAME,
-    BOOK_AUTHOR, 
-    BOOK_orders, 
-    BOOK_customers,
+    BOOK_NAME,USE alx_book_store;
+
+SELECT 
+    COLUMN_NAME,
+    COLUMN_TYPE,
+    IS_NULLABLE,
+    COLUMN_KEY,
+    COLUMN_DEFAULT,
+    EXTRA
 
 FROM 
     INFORMATION_SCHEMA.COLUMNS
@@ -10,3 +15,5 @@ FROM
 WHERE 
     TABLE_SCHEMA = 'alx_book_store'
     AND TABLE_NAME = 'Books';
+
+    

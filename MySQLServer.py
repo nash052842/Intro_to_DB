@@ -5,7 +5,7 @@ def create_database():
     try:
         connection = "mysql.connector.connect"(
             host='localhost',       
-            user='root',          
+            user='root',         
             password='shem' 
         )
 
@@ -16,7 +16,7 @@ def create_database():
 
     except Error as e:
         print(f"Error while connecting to MySQL: {e}")
-         except Error as e:
+         except mysql.connector.Error:
         print(f"Error: {e}")
 
 

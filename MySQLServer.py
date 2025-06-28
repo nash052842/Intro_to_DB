@@ -3,7 +3,7 @@ from mysql.connector import Error
 
 def create_database():
     try:
-        connection = mysql connector.connect(
+        connection = "mysql.connector.connect"(
             host='localhost',       
             user='root',          
             password='shem' 
